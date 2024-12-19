@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopMate</title> <!--Web page title-->
+    <link rel="stylesheet" href="./styles.css"> 
+</head>
+<body>
+    <header>
+        <h1>ShopMate</h1> <!--Page Title-->
+        <div id="controls">
+            <input type="text" id="search" placeholder="Search for products..."> <!--Search bar-->
+            <select id="category"> <!--Category Dropdown-->
+                <option value="">All categories</option>
+                <option value="electronics">Electronics</option>
+                <option value="jewelery">Jewelery</option>
+                <option value="men's clothing">Men's clothing</option>
+                <option value="women's clothing">Women's clothing</option>
+            </select>
+            <button id="toggle-theme">Toggle Light/Dark Mode</button> <!--Button to switch between light and dark mode-->
+        </div>
+    </header>
+    <main>
+        <section id="product-list"></section> <!--Empty Section to display products fetched from API-->
+        <aside id="cart">
+            <h2>Shopping cart</h2> 
+            <ul id="cart-items"></ul> <!--Empty ul to display items added to cart-->
+            <p id="cart-total">Total: $0.00</p> 
+            <button id="clear-cart">Clear Cart</button>
+        </aside>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
